@@ -1,0 +1,224 @@
+/* SIMPLE RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Comfortaa, helvetica, sans-serif;
+}
+header h1{
+	text-align: center;
+}
+
+h1, h2 {
+    margin: 0px 30px;
+    font-size: 30px;
+	float: left;
+	color: #8B4513;
+}
+/*    <!-- float: left; -->*/
+
+
+.nav {
+    width: 100%;
+    text-align: center;
+    margin: 3px auto;
+    margin-top: 60px;
+	/* min-height: 75px; */
+	overflow: auto;
+}
+
+.nav ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;	
+	
+}
+
+.nav ul li {
+	display: inline-block;
+	line-height:45px;
+	height: 45px;
+}
+
+@media screen and (min-width:600px){
+    .nav ul li {
+        width: 200px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.1em;
+    }   
+    
+	
+/*mobile*/
+.nav li {
+    display: inline-block;
+    margin-right: -4px;
+}    
+}
+
+.nav a {
+    padding: 15px 30px;
+    width: 100%;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    background-color: lightgray;
+    margin-left: -5px;
+	display: block;
+	overflow: auto;
+}
+
+.img_sizing{
+    width: 300px;
+    height: auto;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+    float: right;
+    margin: 5px;
+}
+header {
+	background: #FFF8DC;
+	background-size: cover;
+	overflow: auto;
+}
+header,
+footer,
+main {
+    border: 2px solid black;
+    min-height: 40px;
+    overflow: auto;
+	
+}
+aside{
+	background: #FFF8DC;
+	
+	padding: 15px;
+	border: 2px solid black;
+	
+	
+	text-align: center;
+}
+section{
+		border: 2px solid black;
+		
+		
+		text-align: center;
+		
+}
+main {
+    padding: 5px;
+	min-height: 500px;
+}
+
+.images {
+    width: 70%;
+    margin: 5px auto;
+	border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #DD633F;
+}
+
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.images img {
+    width: 20%;
+    height: 100px;
+    margin: 10px 2%;
+}
+
+p {
+	text-align: left;
+    margin: 15px 30px;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+	overflow: hidden;
+}
+
+footer a {
+    padding: 20px;
+}
+
+#current, .nav a:hover {
+    
+	background: #512DA8;
+    color: #ffffff;
+}
+.container {
+    max-width: 1260px;
+    margin: 10px auto;
+    min-height: 500px;
+}
+	
+@keyframes example {
+    0%   {left:0px; top:0px; transform: rotate(-360deg);}
+/*
+    25%  {left:200px; top:0px; transform: rotate(80deg);}
+    50%  {left:400px; top:0px; transform: rotate(120deg);}
+    75%  {left:600px; top:0px; transform: rotate(160deg);}
+*/
+    50% {left:600px; top:0px;}
+	100% {left:0px; top:0px; transform: rotate(360deg);}
+}
+
+#dillydiv{
+    position: relative;
+    animation-name: example;
+    animation-duration: 8s;
+}
+	
+/*#large{
+	width: 5%;
+	height: auto;
+	display: block;
+	margin: 15px auto;
+} */
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}

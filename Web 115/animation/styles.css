@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    padding: 5px;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+body {
+    font-family: verdana, sans-serif;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+header,
+footer {
+    background: white;
+    min-height: 100px;
+    padding: 20px;
+    color: #5c007a;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #5c007a;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 3;
+}
+
+a:hover {
+    background: #ffc107;
+    color: black;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+#rat{ 
+width: 300px;
+height: 300px;
+position: relative;
+left:200px;
+-webkit-animation-name: rat-move; /* Chrome, Safari, Opera */
+-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+animation-name: rat-move;
+animation-duration: 10s;
+}
+
+@keyframes rat-move {
+0% {left:200px; top:0px;}
+25% {left:500px; top:0px;}
+50% {left:500px; top:200px;}
+75% {left:200px; top:200px;}
+100% {left:200px; top:0px;}
+}
+
+#color {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: color; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: color;
+    animation-duration: 4s;
+}
+
+#move {
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes color {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes color {
+    from {background-color: blueviolet;}
+    to {background-color: red;}
+}
