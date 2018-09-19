@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World</title>
+</head>
+<body>
+  <div>
+      <h1>Amelia Dawson</h1>
+      <p>Hello my name is Amy</p>
+      <ul>
+          <li>Illinois</li>
+          <li>My dog is named Simon</li>
+          <li>I am getting a web development certificate.</li>
+      </ul>
+  </div>  
+</body>
+</html>

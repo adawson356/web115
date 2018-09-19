@@ -1,0 +1,296 @@
+<!--Used exclamation tab to get main code-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emmet</title>
+    <!-- # header id and class attributes  #header .title-->
+    <div id="header">This is header class attributes</div>
+    <div class="title">Emmet</div>
+    <style>
+        body {
+            background-color: darkcyan;
+			background: url(wheel.png) no-repeat bottom left fixed;
+			background-size: 200px;
+            color: azure;
+            font-family: arial, verdana, sans-serif;
+        }
+        a {
+            color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <!--table with mult for rows and col  table>colgroup+th>td*3>tr*4-->
+    <table>
+        <colgroup>
+            <col span="2" style="background-color:red">
+            <col style="background-color:yellow">
+        </colgroup>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+            </tr>
+            <tr>
+                <td>a1</td>
+                <td>a2</td>
+                <td>a3</td>
+                <td>a4</td>
+            </tr>
+    </table>
+
+    <!-- lists with text a{start}-->
+    <a href="#">start</a>   
+    <!-- child, and item numbering $  nav>ul>li.sample$*3-->
+    <nav>
+        <ul>
+            <li class="sample1"></li>
+            <li class="sample2"></li>
+            <li class="sample3"></li>
+        </ul>
+    </nav>
+     <!-- titles p[title="Hello World"]-->
+     
+     <p> title="Hello World"></p>
+    
+    <!--sibling div+p+bq -->
+    <!-- -->
+    <div></div>
+    <p>paragraph</p>
+    <!--p{Hello World}-->
+    
+    <!-- grouping and multiplication    div.(ul>li*4>a)+footer -->
+    <div class=""></div>
+    <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+    </ul>
+    <!-- a:link Links-->
+    <!-- -->
+    <footer><a href="http://www.mchenry.com">mcc link</a></footer>
+
+    
+</body>
+</html>
+
+<!--
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Images, Amelia Dawson</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        body {
+            background-color: darkcyan;
+			background: url(wheel.png) no-repeat bottom left fixed;
+			background-size: 200px;
+            color: azure;
+            font-family: arial, verdana, sans-serif;
+        }
+		#poster{
+			background: url(patriotic.png) no-repeat top center;
+		}
+		#rat{
+			background: url(rat.png) no-repeat;
+			background-position: bottom right;
+			background-size: 200px;
+		}
+        nav {
+            text-align: center;
+        }
+        
+        nav a {
+            padding: 5px 10px;
+            margin: 5px 15px;
+            background: lightgray;
+            border: 4px brown solid;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            color: blueviolet;
+        }
+        
+        nav a:hover {
+            color: lightgray;
+            background: blueviolet;
+            border: 4px brown solid;
+        }
+        
+        .container {
+            max-width: 600px;
+            min-height: 250px;
+            margin: 15px auto;
+            background-color: lightgoldenrodyellow;
+            color: black;
+            border: 5px solid brown;
+            border-radius: 20px;
+            clear: both;
+            overflow: auto;
+            padding: 30px;
+        }
+        
+        h1,
+        h2 {
+            text-align: center;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: darkslategrey
+        }
+        
+        ul {
+            list-style-type: disc;
+        }
+        
+        a {
+            color: blueviolet;
+        }
+		figcaption{
+			width: 300px;
+		}
+        
+		plastic li{
+            list-style-type: lower-alpha;
+            list-style-position: inside;
+            padding-left: 20 px;
+            line-height: normal;
+		}
+         
+		#poster li{
+            list-style-type: square;
+            list-style-position: inside;
+            padding-left: 20 px;
+            line-height: normal;
+        }
+        
+        .roman {
+            list-style-type: upper-roman;
+            list-style-position: inside;
+            padding-left: 20 px;
+            line-height: normal;
+        }
+        
+        .alpha {
+            list-style-type: upper-alpha;
+            list-style-position: inside;
+            padding-left: 20 px;
+            line-height: normal;
+        }
+		.right {
+			float: right;
+		}
+		#poster a{
+			color: black;
+			font-size: 1.2em;
+		}
+
+    </style>
+</head>
+
+<body>
+    <header class="container" id="top">
+        <h1>Images</h1>
+        <nav>
+            <a href="#poster">Posters</a>
+            <a href="#cdc">CDC</a>
+            <a href="#rat">Rat</a>
+            <a href="#drip">Drop</a>
+            <a href="#snip">Snip</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="poster">
+            <h2>National Archive Poster</h2>
+            <figure class="right">
+            	<h3>Eat Healthy.gif</h3>
+            	<img src="sow-victory.gif" alt="war garden" width="200" >
+            	<figcaption><a href="https://www.archives.gov/files/education/lessons/sow-seeds/images/sow-victory.gif" >National Archive War Garden Poster </a></figcaption>
+			</figure>
+            <figure class="left">
+            	<h3>Eat Smart.gif</h3>
+            	<img src="be-patriotic.gif" alt="war garden" width="200" >
+            	<figcaption><a href="https://www.archives.gov/files/education/lessons/sow-seeds/images/be-patriotic.gif" >National Archive Save Food Poster </a></figcaption>
+            </figure>
+        </div>
+        <div class="container" id="cdc">
+            <h2>CDC free content</h2>
+            <figure class="left">
+            	<h3>Bee Boostered 1964.jpg</h3>
+            	<img src="bee.jpg" alt="booster shot" width="260" >
+            	<figcaption><a href="https://phil.cdc.gov/phil/details.asp?pid=7221">CDC/ Mary Hilpertshauser </a>
+            	</figcaption>
+            </figure><figure class="right">
+            	<h3>Ebola on the Move.jpg</h3>
+            	<img src="ebola.jpg" alt="jumping around" width="260" >
+            	<figcaption><a href="https://phil.cdc.gov/phil/details.asp" >National Institute of Allergy and Infectious Diseases  (NIAID) </a>
+            </figcaption>
+			</figure>
+            
+        </div>
+        <div class="container" id="rat">
+        	<h2>Don't put baby in the corner.</h2>
+			<figure class="right">        		
+            	<h3>Cardio-Blaster.png</h3>
+            	<img src="wheel.png" alt="wheel" width="75" >
+            	<figcaption><a href="https://pixabay.com/en/hamster-wheel-rat-race-hamster-rush-2730807/">mcmurryjulie </a>
+            	</figcaption>
+            </figure>
+            <figure class="right">
+            	<h3>Rat eating cheese.png</h3>
+            	<img src="rat.png" alt="rat eating cheese" width="75" >
+            	<figcaption><a href="https://pixabay.com/en/rat-mouse-cheese-animal-mammal-152162/" >Pixabay image</a></figcaption>
+            </figure>
+            <figure class="left">
+            	<h3>Plague.png</h3>
+            	<img src="plague.png" alt="ink art rat" width="90" >
+            	<figcaption><a href="https://pixabay.com/en/mouse-rat-animal-rodent-tail-fur-37753/" >Pixabay image</a></figcaption>
+            </figure>
+            <figure class="left">
+            	<h3>Free-form Rat.png</h3>
+            	<img src="flying_rat.png" alt="flying rat" width="80" >
+            	<a href="https://pixabay.com/en/mouse-rat-animal-rodent-306883/">clkr-free-vector-images </a>
+            </figure>
+        </div>
+        <div style="background: margin:5px auto; padding: 20px; border-top: 50px solid rgb(110,139,50); border-bottom: 50px solid rgb(110,139,50)" class="container" id="drip">
+            <h2>drop</h2>
+            <h3>Drop Opacity from material.io</h3>
+            <i class="material-icons">opacity</i>
+        </div>
+        <div class="container" id="snip">
+            <h2>Deconstructing my dog with the Snipping Tool</h2>
+            <figure class="left">
+            	<h3>Zoe Dawson's head</h3>
+            	<img src="dog_head.PNG" alt="wheel" width="125" >
+            	<p>Snip of my dog's head</p>
+            </figure>
+            <figure class="right">
+            	<h3>Zoe Dawson's body</h3>
+            	<img src="dog_body.PNG" alt="wheel" width="150" >
+            	<p>Snip of my dog's body</p>
+            </figure>    
+        </div>
+    </main>
+</body>
+
+</html>
+
+-->
